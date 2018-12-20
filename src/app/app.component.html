@@ -1,12 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Routing and Navigation!
-  </h1>
+<div>
+  <div style="text-align:center">
+    <h1>
+      Routing and Navigation!
+    </h1>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/departments" routerLinkActive="active">Departments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/employees" routerLinkActive="active">Employees</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="p-l-30">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-<nav>
-  <a routerLink="/departments" routerLinkActive="active">Departments</a> &nbsp;
-  <a routerLink="/employees" routerLinkActive="active">Employes</a>
-</nav>
 
-<router-outlet></router-outlet>

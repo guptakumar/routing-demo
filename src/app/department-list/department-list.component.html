@@ -1,6 +1,7 @@
 <h3>Department List</h3>
+
 <ul class="items">
-  <li *ngFor="department of departments">
-    <span class="badge" (click)="onSelect(department)" >{{ department.id }}</span>{{ department.name }}
+  <li *ngFor="let department of departments">
+    <a routerLink="/departments/{{department.id}}"><span class="badge">{{ department.id }} - {{ department.department_name }}</span></a>
   </li>
 </ul>
